@@ -576,19 +576,7 @@ public class ENHSP {
         aibrPreprocessing = cfg.aibrPreprocessing;
     }
 
-    /* metodo originale
-    private void setHeuristic() {
-        if(novelty!=null){
-            SearchHeuristic h_temp;
-            h_temp = PDDLHeuristic.getHeuristic(heuristic, heuristicProblem, redundantConstraints, helpfulActions, helpfulTransitions,
-                    unitCostHeuristic, linearEffectsAbstraction, false);
-            h = PDDLNovelyHeuristic.getNoveltyHeuristic(novelty, heuristicProblem, k_nov, h_temp);
-        }
-        else {
-            h = PDDLHeuristic.getHeuristic(heuristic, heuristicProblem, redundantConstraints, helpfulActions, helpfulTransitions,
-                    unitCostHeuristic || ignoreMetric, linearEffectsAbstraction, aibrDebug);
-        }
-    }*/
+
 
     private SearchHeuristic createHeuristic() {
         if(novelty!=null){
